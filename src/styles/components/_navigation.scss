@@ -1,0 +1,121 @@
+.header-nav {
+    background-color: $color-black;
+    color: $color-white;
+    
+    &__content {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: $content-width;
+        width: 100%;
+    }
+
+    a {
+        color: $color-white;
+    }
+
+    &__button {
+        color: $color-white;
+        cursor: pointer;
+        font-size: 1.5em;
+        padding: 5px 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    &__title {
+        font-size: 2em;
+        padding: 10px 0;
+        border-bottom: 1px solid $color-white;
+        width: 100%;
+
+        &-link {
+            padding: 0 15px;
+        }
+    }
+
+    &__links {
+        flex-wrap: wrap;
+        font-size: 1em;
+        list-style: none;
+        width: 100%;
+    }
+
+    &__link-item {
+        padding: 10px 0;
+        width: 100%;
+
+        a {
+            display: block;
+            padding: 0 15px;
+        }
+
+        &--search {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            > button {
+                color: $color-white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__search {
+        &-text {
+            font-size: 1em;
+            text-align: left;
+            width: 100%;
+        }
+
+        &-icon {
+            display: none;
+            font-size: 1.4em;
+        }
+    }
+
+    @media screen and (min-width: $media-md) {
+        background: -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        &__content {
+            align-items: center;
+            flex-wrap: nowrap;
+            height: 150px;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__title {
+            border: 0;
+            max-width: 40%;
+        }
+
+        &__links {
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+        }
+
+        &__link-item {
+            width: auto;
+        }
+
+        &__search {
+            &-text {
+                display: none;
+            }
+
+            &-icon {
+                display: block;
+            }
+        }
+    }
+}

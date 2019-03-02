@@ -1,4 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
+@import '~font-awesome/css/font-awesome.css';
+@import 'styles/vendor/icofont.css';
+
+@import 'styles/base/reset';
+@import 'styles/base/utils';
+@import 'styles/base/variables';
+
+.app {
+    font-family: $font-lato;
+
+    .site-header {
+        position: relative;
+        width: 100%;
+    }
+
+    @import 'styles/components/navigation';
 }
