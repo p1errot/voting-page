@@ -10,5 +10,6 @@ These instructions will get you a copy of the project up and running on your loc
 * npm 5.6.0
 
 ### Installing
-* Clone this repository 
-* ```git clone github.com/p1errot/```
+* Clone this repository `git clone https://github.com/p1errot/voting-page.git`
+* Enter to voting-page folder
+* Run `npm start` on your console to start a live reload server
