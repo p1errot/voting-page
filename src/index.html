@@ -13,7 +13,7 @@
             <button class="header-nav__button" type="button">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
-            <div class="header-nav__content">
+            <div class="header-nav__content container">
                 <div class="header-nav__title">
                     <a class="header-nav__title-link d-block" href="./">Rule of Thumb.</a>
                 </div>
@@ -39,7 +39,7 @@
     </header>
 
     <section class="hero" style="background-image: url(../img/269E44F2CF1C1517F8231CC2DA6C5383.jpg)">
-        <div class="hero__content d-flex">
+        <div class="hero__content container d-flex">
             <div class="poll-details">
                 <h1 class="poll-details__title">
                     What's your opinion on
@@ -75,7 +75,7 @@
         </footer>
     </section>
 
-    <main class="site-content">
+    <main class="site-content container">
         <section class="notice d-flex">
             <h3 class="notice__title">
                 Speak out. Beheard.
@@ -97,8 +97,8 @@
         <section class="votes">
             <h2 class="votes__title">Votes</h2>
 
-            <div class="poll-section d-flex">
-                <article class="col">
+            <div class="poll-section row d-flex">
+                <article class="item col">
                     <div class="poll-item d-flex" style="background-image: url(../img/864B7E311E1FBDEBADF776A0800E3A66.jpg)">
                         <div class="poll-item__overlay"></div>
                         <div class="poll-item__content d-flex">
@@ -123,6 +123,7 @@
                                         <input type="radio" id="vote1-no" name="vote1" value="no" />
                                         <i class="icofont-thumbs-down"></i>
                                     </label>
+                                    <button class="poll-actions__cta" type="button" role="button">Vote Now</button>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +140,7 @@
                     </div>
                 </article>
 
-                <article class="col">
+                <article class="item col">
                     <div class="poll-item d-flex" style="background-image: url(../img/339DDD4872C1159447485B3206B2C502.jpg)">
                         <div class="poll-item__overlay"></div>
                         <div class="poll-item__content d-flex">
@@ -164,6 +165,7 @@
                                         <input type="radio" id="vote2-no" name="vote2" value="no" />
                                         <i class="icofont-thumbs-down"></i>
                                     </label>
+                                    <button class="poll-actions__cta" type="button" role="button">Vote Now</button>
                                 </div>
                             </div>
                         </div>
@@ -179,9 +181,131 @@
                         </div>
                     </div>
                 </article>
+
+                <article class="item col">
+                    <div class="poll-item d-flex" style="background-image: url(../img/B705A774C6A344B8F3C609269358BF47.jpg)">
+                        <div class="poll-item__overlay"></div>
+                        <div class="poll-item__content d-flex">
+                            <div class="final-result final-result--down">
+                                <i class="icofont-thumbs-down"></i>
+                            </div>
+                            <div class="poll-description">
+                                <h3 class="poll-description__name">Cristina Fernández de Kirchner</h3>
+                                <p class="poll-description__area">
+                                    <strong>1 month ago</strong> in Politics
+                                </p>
+                                <p class="poll-description__resume">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+                                    Curae; Aenean libero ante, rutrum sed ligula id, iaculis vulputate turpis.
+                                </p>
+                                <div class="poll-actions">
+                                    <label class="poll-actions__vote poll-actions__vote--up">
+                                        <input type="radio" id="vote3-yes" name="vote3" value="yes" />
+                                        <i class="icofont-thumbs-up"></i>
+                                    </label>
+                                    <label class="poll-actions__vote poll-actions__vote--down">
+                                        <input type="radio" id="vote3-no" name="vote3" value="no" />
+                                        <i class="icofont-thumbs-down"></i>
+                                    </label>
+                                    <button class="poll-actions__cta" type="button" role="button">Vote Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poll-item__results d-flex">
+                            <div class="results results--up text-left" style="width: 36%">
+                                <i class="icofont-thumbs-up"></i>
+                                36%
+                            </div>
+                            <div class="results results--down text-right" style="width: 64%">
+                                64%
+                                <i class="icofont-thumbs-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="item col">
+                    <div class="poll-item d-flex" style="background-image: url(../img/FA15862F771B27EDB8ECB14CA3872E4A.jpg)">
+                        <div class="poll-item__overlay"></div>
+                        <div class="poll-item__content d-flex">
+                            <div class="final-result final-result--down">
+                                <i class="icofont-thumbs-down"></i>
+                            </div>
+                            <div class="poll-description">
+                                <h3 class="poll-description__name">Malala Yousafzai</h3>
+                                <p class="poll-description__area">
+                                    <strong>1 month ago</strong> in Enternainment
+                                </p>
+                                <p class="poll-description__resume">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+                                    Curae; Aenean libero ante, rutrum sed ligula id, iaculis vulputate turpis.
+                                </p>
+                                <div class="poll-actions">
+                                    <label class="poll-actions__vote poll-actions__vote--up">
+                                        <input type="radio" id="vote3-yes" name="vote3" value="yes" />
+                                        <i class="icofont-thumbs-up"></i>
+                                    </label>
+                                    <label class="poll-actions__vote poll-actions__vote--down">
+                                        <input type="radio" id="vote3-no" name="vote3" value="no" />
+                                        <i class="icofont-thumbs-down"></i>
+                                    </label>
+                                    <button class="poll-actions__cta" type="button" role="button">Vote Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poll-item__results d-flex">
+                            <div class="results results--up text-left" style="width: 64%">
+                                <i class="icofont-thumbs-up"></i>
+                                64%
+                            </div>
+                            <div class="results results--down text-right" style="width: 36%">
+                                36%
+                                <i class="icofont-thumbs-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </section> 
+        </section>
+
+        <section class="suggestion container">
+            <div class="suggestion__effect row d-flex text-center">
+                <p class="suggestion__text col">Is there anyone else you would want us to add?</p>
+                <p class="suggestion__cta col">
+                    <button type="button" role="alertdialog">Submit a Name</button>
+                </p>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer container">
+        <div class="site-footer__cont d-flex text-center">
+            <nav class="footer-nav col no-gutter margin-center">
+                <ul class="d-flex">
+                    <li class="footer-nav__item">
+                        <a href="">Terms and Conditions</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-social col no-gutter">
+                <p>
+                    <span class="footer-social__text">Follow us</span>
+                    <a class="footer-social__icon" href="">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                    <a class="footer-social__icon" href="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="/main.js"></script>
 </body>
 </html>

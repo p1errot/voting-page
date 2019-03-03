@@ -1,9 +1,9 @@
 @import '~font-awesome/css/font-awesome.css';
 @import 'styles/vendor/icofont.css';
 
+@import 'styles/base/variables';
 @import 'styles/base/reset';
 @import 'styles/base/utils';
-@import 'styles/base/variables';
 
 .app {
     font-family: $font-lato;
@@ -18,8 +18,7 @@
 
     .site-content {
         margin: 0 auto;
-        max-width: $content-width;
-        width: 100%;
+        padding-bottom: 20px;
         padding-top: 35px;
 
         .notice {
@@ -78,16 +77,19 @@
 
         .poll-section {
             flex-wrap: wrap;
-            padding-top: 40px;
+            padding-top: 20px;
+
+            > .col {
+                padding-bottom: $gutters;
+                padding-top: $gutters;
+            }
 
             @media screen and (min-width: $media-md) {
                 > .col {
-                    width: 50%;
+                    width: calc(50% - 40px);
                 }
             }
         }
-
-        
 
         .poll-item {
             align-content: flex-end;
@@ -197,7 +199,68 @@
                 input {
                     display: none;
                 }
+
+                &__cta {
+                    border: 1px solid $color-white;
+                    font-size: 1em;
+                    font-weight: 400;
+                    white-space: nowrap;
+                    width: 98px;
+                    height: 35px;
+                    color: $color-white;
+                }
+            }
+        }
+
+        .suggestion {
+            background-image: url(../img/suggest-bg.jpg);
+            background-size: cover;
+            margin: 20px 0;
+
+            &__effect {
+                align-items: center;
+                background: rgba($color-white, 0.8);
+                flex-wrap: wrap;
+                height: 100%;
+                justify-content: space-around;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+
+            &__text {
+                font-size: 1.875em;
+                font-weight: $weight-light;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+
+            &__cta {
+                button {
+                    border: 3px solid #c7c5c4;
+                    font-size: 1.250em;
+                    font-weight: 400;
+                    white-space: nowrap;
+                    width: 205px;
+                    height: 47px;
+                }
+            }
+
+            @media screen and (min-width: $media-md) {
+                &__effect {
+                    flex-wrap: nowrap;
+                }
+
+                &__text {
+                    text-align: left;
+                }
+
+                &__cta {
+                    text-align: right;
+                    width: auto;
+                }
             }
         }
     }
+
+    @import 'styles/components/footer';
 }
