@@ -21,5 +21,183 @@
         max-width: $content-width;
         width: 100%;
         padding-top: 35px;
+
+        .notice {
+            align-items: center;
+            background-color: $color-light-grey;
+            flex-wrap: wrap;
+            font-size: 0.938rem;
+            font-weight: $weight-light;
+            justify-content: center;
+            padding: 20px 25px;
+
+            &__title {
+                font-size: 1.400em;
+                padding-bottom: 20px;
+
+                strong {
+                    font-size: 1.762em;
+                    white-space: nowrap;
+                }
+            }
+
+            &__description {
+                padding: 0 20px 20px;
+            }
+
+            &__close {
+                max-width: 1.6em;
+                text-align: center;
+
+                button {
+                    font-size: 1.2em;
+                }
+            }
+
+            @media screen and (min-width: $media-md) {
+                flex-wrap: nowrap;
+
+                &__title {
+                    padding-bottom: 0;
+                }
+
+                &__description {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .votes {
+            padding-top: 40px;
+
+            &__title {
+                font-size: 2.500em;
+                font-weight: $weight-light;
+            }
+        }
+
+        .poll-section {
+            flex-wrap: wrap;
+            padding-top: 40px;
+
+            @media screen and (min-width: $media-md) {
+                > .col {
+                    width: 50%;
+                }
+            }
+        }
+
+        
+
+        .poll-item {
+            align-content: flex-end;
+            align-items: flex-end;
+            background-position: center center;
+            background-size: cover;
+            flex-wrap: wrap;
+            height: 550px;
+            position: relative;
+            width: 100%;
+
+            &__overlay {
+                background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(15,15,15,0) 30%, rgba(51,51,51,0.8) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(15,15,15,0) 30%,rgba(51,51,51,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(15,15,15,0) 30%,rgba(51,51,51,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc333333',GradientType=0 ); /* IE6-9 */
+
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+
+            &__content {
+                align-items: flex-start;
+                position: relative;
+                z-index: 1;
+
+                .final-result {
+                    color: $color-white;
+                    margin-top: 9px;
+                    padding: 3px 5px 6px;
+
+                    &--up {
+                        background-color: $color-pine;
+                    }
+
+                    &--down {
+                        background-color: $color-amber;
+                    }
+                }
+            }
+
+            &__results {
+                color: $color-white;
+                font-size: 2em;
+                padding-top: 30px;
+                width: 100%;
+                z-index: 1;
+
+                .results {
+                    padding: 5px 13px;
+
+                    &--up {
+                        background-color: rgba($color-pine, 0.7);
+                        width: 64%;
+                    }
+
+                    &--down {
+                        background-color: rgba($color-amber, 0.7);
+                        width: 36%;
+                    }
+                }
+            }
+
+            .poll-description {
+                color: $color-white;
+                font-size: 1rem;
+                padding-left: 7px;
+                padding-right: 30px;
+
+                &__name {
+                    font-size: 2.250em;
+                }
+
+                &__area {
+                    font-size: 0.750em;
+                }
+
+                &__resume {
+                    font-size: 1em;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                }
+            }
+
+            .poll-actions {
+                padding-top: 15px;
+
+                &__vote {
+                    color: $color-white;
+                    cursor: pointer;
+                    margin-right: 6px;
+                    padding: 5px 5px 6px 8px;
+                    position: relative;
+
+                    &--up {
+                        background-color: $color-pine;
+                    }
+
+                    &--down {
+                        background-color: $color-amber;
+                    }
+                }
+
+                input {
+                    display: none;
+                }
+            }
+        }
     }
 }
