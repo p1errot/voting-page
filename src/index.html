@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 <body class="app home-page">
-    <header class="site-header"></header>
+    <header class="site-header">
         <nav class="header-nav">
-            <div class="header-nav__content d-flex">
-                <button class="header-nav__button" type="button">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
+            <button class="header-nav__button" type="button">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="header-nav__content">
                 <div class="header-nav__title">
                     <a class="header-nav__title-link d-block" href="./">Rule of Thumb.</a>
                 </div>
@@ -36,10 +36,48 @@
                 </ul>
             </div>
         </nav>
-        <section class="">
+    </header>
+    <section class="hero" style="background-image: url(../img/269E44F2CF1C1517F8231CC2DA6C5383.jpg)">
+        <div class="hero__content d-flex">
+            <div class="poll-details">
+                <h1 class="poll-details__title">
+                    What's your opinion on
+                    <span class="d-block">Pope Francis?</span>
+                </h1>
+                <p class="poll-details__description">
+                    He's talking tough on clergy sexual abuse, but is he just another papal 
+                    pervert protector? (thumbs down) or a true pedophile punishing pontiff? 
+                    (thumbs up) 
+                </p>
+                <p class="poll-details__w-link">
+                    <i class="fa fa-wikipedia-w" aria-hidden="true"></i>
+                    <a href="" target="_blank">More information</a>
+                </p>
+                <p class="poll-details__cta">What's Your Verdict?</p>
+                <div class="poll-actions d-flex">
+                    <button class="poll-actions__cta poll-actions__cta--up">
+                        <i class="icofont-thumbs-up"></i>
+                    </button>
+                    <button class="poll-actions__cta poll-actions__cta--down">
+                            <i class="icofont-thumbs-down"></i>
+                        </button>
+                </div>
+            </div>
+        </div>
+        <footer class="poll-ending d-flex">
+            <p class="poll-ending__running d-flex">
+                <span>Closing in</span>
+            </p>
+            <p class="poll-ending__left d-flex">
+                <span><strong>22</strong> days</span>
+            </p>
+        </footer>
+    </section>
+    <main class="site-content">
+        <section>
 
         </section>
-    </header>
+    </main>
     <script src="/main.js"></script>
 </body>
 </html>

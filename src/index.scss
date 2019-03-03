@@ -14,4 +14,12 @@
     }
 
     @import 'styles/components/navigation';
+    @import 'styles/components/hero';
+
+    .site-content {
+        margin: 0 auto;
+        max-width: $content-width;
+        width: 100%;
+        padding-top: 35px;
+    }
 }

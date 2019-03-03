@@ -1,8 +1,10 @@
 .header-nav {
     background-color: $color-black;
     color: $color-white;
+    z-index: 10;
     
     &__content {
+        display: none;
         flex-wrap: wrap;
         margin: 0 auto;
         max-width: $content-width;
@@ -21,6 +23,7 @@
         position: absolute;
         right: 10px;
         top: 10px;
+        z-index: 1;
     }
 
     &__title {
@@ -85,6 +88,7 @@
         width: 100%;
 
         &__content {
+            display: flex;
             align-items: center;
             flex-wrap: nowrap;
             height: 150px;
