@@ -1,0 +1,38 @@
+[
+    {
+        "area": "Enternainment",
+        "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean libero ante, rutrum sed ligula id, iaculis vulputate turpis.",
+        "id": "864B7E311E1FBDEBADF776A0800E3A66",
+        "name": "Kanye West",
+        "voteTime": "1 month ago",
+        "voteYes": 1,
+        "voteNo": 0
+    },
+    {
+        "area": "Bussiness",
+        "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean libero ante, rutrum sed ligula id, iaculis vulputate turpis.",
+        "id": "339DDD4872C1159447485B3206B2C502",
+        "name": "Mark Zuckerberg",
+        "voteTime": "1 month ago",
+        "voteYes": 36,
+        "voteNo": 64
+    },
+    {
+        "area": "Politics",
+        "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean libero ante, rutrum sed ligula id, iaculis vulputate turpis.",
+        "id": "B705A774C6A344B8F3C609269358BF47",
+        "name": "Cristina Fernández de Kirchner",
+        "voteTime": "1 month ago",
+        "voteYes": 36,
+        "voteNo": 64
+    },
+    {
+        "area": "Enternainment",
+        "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean libero ante, rutrum sed ligula id, iaculis vulputate turpis.",
+        "id": "FA15862F771B27EDB8ECB14CA3872E4A",
+        "name": "Malala Yousafzai",
+        "voteTime": "1 month ago",
+        "voteYes": 64,
+        "voteNo": 36
+    }
+]
