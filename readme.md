@@ -12,4 +12,5 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 * Clone this repository `git clone https://github.com/p1errot/voting-page.git`
 * Enter to voting-page folder
-* Run `npm start` on your console to start a live reload server
+* Run `npm install` in your console / terminal to install all dependencies
+* Run `npm start` in your console to start a live reload server
